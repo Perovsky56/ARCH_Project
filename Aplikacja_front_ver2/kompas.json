@@ -1,44 +1,266 @@
 {
     "questions": [
-        {
-            "question": "Przeciętny obywatel ma prawo posiadać broń palną bez większych restrykcji",
-            "answers": [
-                "Zdecydowanie się zgadzam",
-                "Raczej się zgadzam",
-                "Raczej się nie zgadzam",
-                "Zdecydowanie się nie zgadzam"
-            ],
-            "category": 1
-        },
-        {
-            "question": "Broń palna powinna być dostępna dla obywateli, ale po przejściu odpowiednich badań i otrzymaniu zgody.",
-            "answers": [
-                "Zdecydowanie się zgadzam",
-                "Raczej się zgadzam",
-                "Raczej się nie zgadzam",
-                "Zdecydowanie się nie zgadzam"
-            ],
-            "category": 2
-        },
-        {
-            "question": "Przeciętny obywatel ma prawo posiadać broń palną bez większych restrykcji",
-            "answers": [
-                "Zdecydowanie się zgadzam",
-                "Raczej się zgadzam",
-                "Raczej się nie zgadzam",
-                "Zdecydowanie się nie zgadzam"
-            ],
-            "category": 3
-        },
-        {
-            "question": "Przeciętny obywatel ma prawo posiadać broń palną bez większych restrykcji",
-            "answers": [
-                "Zdecydowanie się zgadzam",
-                "Raczej się zgadzam",
-                "Raczej się nie zgadzam",
-                "Zdecydowanie się nie zgadzam"
-            ],
-            "category": 4
-        }
+      {
+        "question": "W Polsce należy wprowadzić program masowej budowy tanich mieszkań przez instytucje państwowe",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 1
+      },
+      {
+        "question": "Program 800+ powinien być zlikwidowany lub zastąpiony ulgą podatkową",
+        "answers": [
+          "Zdecydowanie tak",
+          "Raczej tak",
+          "Raczej nie",
+          "Zdecydowanie nie"
+        ],
+        "category": 1
+      },
+      {
+        "question": "Płaca minimalna nie powinna istnieć",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 1
+      },
+      {
+        "question": "Wszystkie firmy powinny być zobowiązane do publikacji informacji o różnicach w płacach między kobietami a mężczyznami na tych samych stanowiskach",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 1
+      },
+      {
+        "question": "Czy popierasz zwiększenie podatków dla najbogatszych, aby finansować usługi publiczne?",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 1
+      },
+   
+   
+   
+      {
+        "question": "Religia przynosi społeczeństwu więcej szkód niż korzyści i laicyzacja kultury jest pożądana",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 2
+      },
+      {
+        "question": "Popieram ułatwienie dostępu do aborcji w Polsce",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 2
+      },
+      {
+        "question": "Prawa osób nieheteroseksualnych-LGBT:",
+        "answers": [
+          "LGBT jest ideologią, która truje umysły i za bardzo rozpanoszyła się na zachodzie. Jest oczywistym, że nie można pozwolić im na krok w przód, ponieważ będą domagali się coraz więcej",
+          "Prawa osób LGBT nie są priorytetem. Nie można jednak udawać że nie istnieją i wprowadzenie ustawy o związkach partnerskich byłoby społecznie dobre i nieszkodliwe.",
+          "Osoby LGBT powinny mieć te same prawa co reszta społeczeństwa - ustawa o związkach partnerskich i legalizacja małżeństw jednopłciowych to obowiązek.",
+          "Ustawa o związkach partnerskich to aktualne minimum. Następnie należy iść z rytmem zachodniej Europy i zalegalizować małżeństwa jednopłociowe, a następnie adopcje dzieci."
+        ],
+        "category": 2
+      },
+      {
+        "question": "Czy uważasz, że tradycyjne wartości rodzinne powinny być chronione przed zmianami społecznymi?",
+        "answers": [
+          "Zdecydowanie tak",
+          "Raczej tak",
+          "Raczej nie",
+          "Zdecydowanie nie"
+        ],
+        "category": 2
+      },
+      {
+        "question": "Czy uważasz, że rząd powinien wspierać polityki promujące równość płci i walkę z dyskryminacją?",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 2
+      },
+   
+   
+   
+      {
+        "question": "Jaki jest Twój pogląd na posiadanie broni palnej przez obywateli?",
+        "answers": [
+          "Przeciętny obywatel ma prawo posiadać broń palną bez większych restrykcji. Minimum obostrzeń. Tylko tak człowiek może się czuć bezpieczny z uwagi na częstą nieporadność służb",
+          "Broń palna powinna być dostępna dla obywateli, ale po przejściu odpowiednich badań i otrzymaniu zgody. Narzędzie obrony własnej jest potrzebne, ale nie możemy narażać społeczności na psychopatów",
+          "Broń palna powinna być dozwolona tylko dla nielicznych grup oraz po spełnieniu wielu wymogów, w tym także przejściu odpowiednich badań. Powszechny dostęp do broni nie jest konieczny",
+          "Przeciętny obywatel nie powinien być w posiadaniu broni palnej. Grozi to wieloma atakami, w tym zamachami terrorystycznymi. Powinna być ona jedynie w rękach odpowiednich służb"
+        ],
+        "category": 3
+      },
+      {
+        "question": "PKB przeznaczane na rozwój militarny państwa i pogłębianie potencjału wojskowego powinno zostać…",
+        "answers": [
+          "Zdecydowanie zwiększone",
+          "Zwiększone",
+          "Pozostawione w tej formie jakiej jest",
+          "Zmniejszone"
+        ],
+        "category": 3
+      },
+      {
+        "question": "Czy uważasz, że państwo powinno całkowicie zrezygnować z posiadania broni jądrowej?",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 3
+      },
+      {
+        "question": "Czy uważasz, że edukacja społeczeństwa w kwestiach samoobrony i obrony cywilnej, a także budowa i rozwój obiektów wojskowych takich jak bunkry i schrony są istotne?",
+        "answers": [
+          "Zdecydowanie tak",
+          "Raczej tak",
+          "Raczej nie",
+          "Zdecydowanie nie"
+        ],
+        "category": 3
+      },
+      {
+        "question": "Czy uważasz, że rozwój technologii wojskowych, takich jak drony bojowe, jest kluczowy dla bezpieczeństwa narodowego?",
+        "answers": [
+          "Zdecydowanie tak",
+          "Raczej tak",
+          "Raczej nie",
+          "Zdecydowanie nie"
+        ],
+        "category": 3
+      },
+   
+   
+      {
+        "question": "Rozwiązanie wprowadzane przez Unię Europejską w kwestii zakazu nowych sprzedaży samochodów spalinowych i nakładania podatków za eksploatowanie takich pojazdów jest potrzebne i pożyteczne",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 4
+      },
+      {
+        "question": "Co z transformacją energetyczną i polityką OZE w Polsce?",
+        "answers": [
+          "Nie należy rezygnować ze złóż i dóbr, na których leży Polska. Powinniśmy eksploatować je do granicy opłacalności, i dodatkowo wprowadzić energię jądrową",
+          "Należy stopniowo odchodzić od paliw kopalnianych i wprowadzać energię jądrową i zieloną-odnawialną",
+          "Powinno wprowadzić się miks energetyczny oparty na źródłach odnawialnych oraz energii jądrowej. Trzeba odejść od paliw kopalnianych",
+          "Do 2040 roku powinniśmy zamknąć wszystkie szkodliwe i smrodliwe kopalnie węgla. Należy przejść przede wszystkim na zieloną energię z dodatkiem energii jądrowej"
+        ],
+        "category": 4
+      },
+      {
+        "question": "Unia Europejska powinna zrezygnować z celu osiągnięcia neutralności klimatycznej do 2050 roku.",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 4
+      },
+      {
+        "question": "Firmy powinny płacić więcej za swoje emisje CO2.",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 4
+      },
+      {
+        "question": "Należy wprowadzić zakazać hodowli zwierząt na futra.",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 4
+      },
+   
+   
+   
+   
+      {
+        "question": "Unia Europejska powinna dążyć do federalizacji i zacieśniania więzi między państwami, również do posiadania jednej armii i jednej waluty",
+        "answers": [
+          "Zdecydowanie nie",
+          "Raczej nie",
+          "Raczej tak",
+          "Zdecydowanie tak"
+        ],
+        "category": 5
+      },
+      {
+        "question": "Europejska Wspólnota Węgla i Stali była lepszym rozwiązaniem niż w obecnej formie Unia Europejska",
+        "answers": [
+          "Zdecydowanie tak",
+          "Raczej tak",
+          "Raczej nie",
+          "Zdecydowanie nie"
+        ],
+        "category": 5
+      },
+      {
+        "question": "Członkostwo w NATO to wystarczające gwarancje bezpieczeństwa dla Polski",
+        "answers": [
+          "Zdecydowanie tak",
+          "Raczej tak",
+          "Raczej nie",
+          "Zdecydowanie nie"
+        ],
+        "category": 5
+      },
+      {
+        "question": "Migranci, próbujący przekroczyć granicę Unii Europejskiej poza przejściami granicznymi, powinni być odsyłani z powrotem",
+        "answers": [
+          "Zdecydowanie tak",
+          "Raczej tak",
+          "Raczej nie",
+          "Zdecydowanie nie"
+        ],
+        "category": 5
+      },
+      {
+        "question": "Czy sądzisz, że ochrona i promocja języka narodowego powinna być jednym z priorytetów polityki państwowej?",
+        "answers": [
+          "Zdecydowanie tak",
+          "Raczej tak",
+          "Raczej nie",
+          "Zdecydowanie nie"
+        ],
+        "category": 5
+      }
     ]
 }

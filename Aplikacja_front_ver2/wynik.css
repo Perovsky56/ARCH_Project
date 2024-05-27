@@ -99,12 +99,12 @@ section.mainElements {
     background-color: #f4FBF4;
     width: 80%;
     border-radius: 20px;
-    height: 96vh;
+    height: 128vh;
     margin: 2vh 2vh 2vh 0;
 }
 
 section.mainElements > h1 {
-    position: absolute;
+    position: relative;
     top:25px;
     left: 45px;
     text-transform: uppercase;
@@ -180,4 +180,38 @@ section.mainElements > h1 {
     flex-direction: column;
     margin-left: 10rem;
     margin-right: 10rem;
+}
+
+.chosen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 10rem;
+    font-size: 2.5rem;
+}
+
+.chartAndText {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Wyrównaj elementy wzdłuż osi Y */
+}
+
+.textResult {
+    flex-direction: column;
+}
+
+.textResult > h1 {
+    font-size: 2.5rem;
+    color: #134E5E;
+    margin-bottom: 1rem;
+}
+
+.barName {
+    font-size: 1.6rem;
+    align-items: center;
+    display: flex;
+    margin-left: auto; /* Wyrównanie do prawej */
+    margin-right: auto; /* Wyrównanie do lewej */
 }

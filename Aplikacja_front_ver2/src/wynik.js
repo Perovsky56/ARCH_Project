@@ -40,18 +40,42 @@ document.addEventListener("DOMContentLoaded", function() {
                 leftIconSrc = 'images/icon1.png';
                 rightIconSrc = 'images/icon2.png';
             } else if (i === 1) {
-                leftIconSrc = 'images/icon3.png';
-                rightIconSrc = 'images/icon4.png';
+                leftIconSrc = 'images/icon4.png';
+                rightIconSrc = 'images/icon3.png';
             } else if (i === 2) {
-                leftIconSrc = 'images/icon5.png';
-                rightIconSrc = 'images/icon6.png';
+                leftIconSrc = 'images/icon6.png';
+                rightIconSrc = 'images/icon5.png';
             } else if (i === 3) {
-                leftIconSrc = 'images/icon7.png';
-                rightIconSrc = 'images/icon8.png';
+                leftIconSrc = 'images/icon8.png';
+                rightIconSrc = 'images/icon7.png';
             } else if (i === 4) {
-                leftIconSrc = 'images/icon9.png';
-                rightIconSrc = 'images/icon10.png';
+                leftIconSrc = 'images/icon10.png';
+                rightIconSrc = 'images/icon9.png';
             }
+
+            const barName = document.createElement('div');
+            barName.classList.add('barName');
+            let barNameLabel;
+            switch (i) {
+                case 0:
+                    barNameLabel = "Etatyzm / Wolny rynek";
+                    break;
+                case 1:
+                    barNameLabel = "Liberalizm / Konserwatyzm";
+                    break;
+                case 2:
+                    barNameLabel = "Pacyfizm / Militaryzm";
+                    break;
+                case 3:
+                    barNameLabel = "Ekologizm / Industrializm";
+                    break;
+                case 4:
+                    barNameLabel = "Kosmopolityzm / Nacjonalizm";
+                    break;
+                default:
+                    break;
+            };
+            barName.innerHTML = "<p>"+barNameLabel+"</p>";
 
             const bar = document.createElement('div');
             bar.classList.add('bar');
@@ -62,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="icon rightIcon"><img src="${rightIconSrc}" alt=""></div>
                 <div class="value">${leftValue.toFixed(0)} / ${rightValue.toFixed(0)}</div>
             `;
+            resultDiv.appendChild(barName);
             resultDiv.appendChild(bar);
             const progress = bar.querySelector('.progress');
             const remaining = bar.querySelector('.remaining');
@@ -70,12 +95,28 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    function findClosestPointIndex(referencePoint, pointsArray) {
+        let minDistance = Infinity;
+        let closestIndex = -1;
+    
+        pointsArray.forEach((point, index) => {
+            const distance = Math.sqrt(Math.pow(point.x - referencePoint.x, 2) + Math.pow(point.y - referencePoint.y, 2));
+            
+            if (distance < minDistance) {
+                minDistance = distance;
+                closestIndex = index;
+            }
+        });
+    
+        return closestIndex;
+    }
+
     function drawChart() {
         const chartArea = document.querySelector('.chartArea');
     
         // Wymiary obszaru wykresu
-        const width = 400;
-        const height = 400;
+        const width = 350;
+        const height = 350;
     
         // Tworzenie elementu SVG
         const svg = d3.select(chartArea)
@@ -150,9 +191,9 @@ document.addEventListener("DOMContentLoaded", function() {
             .enter()
             .append("line")
             .attr("class", "xGrid")
-            .attr("x1", d => centerX + d * 40) // Odległość między liniami siatki
+            .attr("x1", d => centerX + d * 30) // Odległość między liniami siatki
             .attr("y1", 0)
-            .attr("x2", d => centerX + d * 40)
+            .attr("x2", d => centerX + d * 30)
             .attr("y2", height)
             .attr("stroke", "lightgray")
             .attr("stroke-dasharray", "2"); // Ustawienie kreskowanej linii
@@ -164,9 +205,9 @@ document.addEventListener("DOMContentLoaded", function() {
             .append("line")
             .attr("class", "yGrid")
             .attr("x1", 0)
-            .attr("y1", d => centerY + d * 40) // Odległość między liniami siatki
+            .attr("y1", d => centerY + d * 30) // Odległość między liniami siatki
             .attr("x2", width)
-            .attr("y2", d => centerY + d * 40)
+            .attr("y2", d => centerY + d * 30)
             .attr("stroke", "lightgray")
             .attr("stroke-dasharray", "2"); // Ustawienie kreskowanej linii
     
@@ -217,8 +258,17 @@ document.addEventListener("DOMContentLoaded", function() {
             .text("liberalizm");
     
         // Rysowanie punktu na wykresie
-        const x = centerX + stats[0] * 40; // Skalowanie wartości stats[0] do zakresu wykresu
-        const y = centerY - stats[1] * 40; // Odwrócenie kierunku Y i skalowanie wartości stats[1] do zakresu wykresu
+        const x = centerX + stats[0] * 30; // Skalowanie wartości stats[0] do zakresu wykresu
+        const y = centerY - stats[1] * 30; // Odwrócenie kierunku Y i skalowanie wartości stats[1] do zakresu wykresu
+        // teoretycznie punkt
+        const referencePoint = { x: stats[0], y: stats[1] }; // Twój punkt referencyjny
+        const pointsArray = [{ x: -2.0, y: 3.0 }, { x: -1.0, y: -1.0 }, { x: 1.0, y: 0.0 }, { x: 3.0, y: 3.0 }, { x: -3.0, y: -3.0 }];
+//                                PIS                  KO                      TRZECIA           KONFA             LEWICA
+        const closestIndex = findClosestPointIndex(referencePoint, pointsArray);
+        const labels = ["Prawo i Sprawiedliwość", "Koalicja Obywatelska", "Trzecia Droga", "Konfederacja", "Lewica"];
+        const chosenParagraph = document.querySelector('.chosen');
+        chosenParagraph.textContent = labels[closestIndex];
+
         svg.append("circle")
             .attr("cx", x)
             .attr("cy", y)
@@ -234,12 +284,5 @@ document.addEventListener("DOMContentLoaded", function() {
             .text("TY");
     }
     
-    
-    
-    
-    
-    
-    
-
     updateStatsDisplay();
 });

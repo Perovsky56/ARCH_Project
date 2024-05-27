@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
         statsDisplay.textContent = statsText.slice(0, -2); // usuń ostatni separator
     }
 
-    nextButton.parentNode.insertBefore(statsDisplay, nextButton.nextSibling);
+    //nextButton.parentNode.insertBefore(statsDisplay, nextButton.nextSibling);
 
     // Zapisywanie statystyk w cookie po zakończeniu quizu
     window.addEventListener('beforeunload', function() {
