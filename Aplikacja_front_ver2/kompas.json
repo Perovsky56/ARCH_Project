@@ -1,0 +1,44 @@
+{
+    "questions": [
+        {
+            "question": "Przeciętny obywatel ma prawo posiadać broń palną bez większych restrykcji",
+            "answers": [
+                "Zdecydowanie się zgadzam",
+                "Raczej się zgadzam",
+                "Raczej się nie zgadzam",
+                "Zdecydowanie się nie zgadzam"
+            ],
+            "category": 1
+        },
+        {
+            "question": "Broń palna powinna być dostępna dla obywateli, ale po przejściu odpowiednich badań i otrzymaniu zgody.",
+            "answers": [
+                "Zdecydowanie się zgadzam",
+                "Raczej się zgadzam",
+                "Raczej się nie zgadzam",
+                "Zdecydowanie się nie zgadzam"
+            ],
+            "category": 2
+        },
+        {
+            "question": "Przeciętny obywatel ma prawo posiadać broń palną bez większych restrykcji",
+            "answers": [
+                "Zdecydowanie się zgadzam",
+                "Raczej się zgadzam",
+                "Raczej się nie zgadzam",
+                "Zdecydowanie się nie zgadzam"
+            ],
+            "category": 3
+        },
+        {
+            "question": "Przeciętny obywatel ma prawo posiadać broń palną bez większych restrykcji",
+            "answers": [
+                "Zdecydowanie się zgadzam",
+                "Raczej się zgadzam",
+                "Raczej się nie zgadzam",
+                "Zdecydowanie się nie zgadzam"
+            ],
+            "category": 4
+        }
+    ]
+}

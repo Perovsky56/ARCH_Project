@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companio Politico</title>
+    <link rel="stylesheet" href="wynik.css">
+    <script src="node_modules/d3/dist/d3.js"></script>
+</head>
+    <body>
+        <section class="wrapper">
+            
+            <section class="containerWithNavigation">
+                <h1 class="mainTitle">Companio politico</h1>
+                <div class="logUnderMainTitle"></div>
+                <h2 class="navigationTitle">Nawigacja</h2>
+                <nav>
+                    <ul class="navigation">
+                        <li class="dashboardMenu"><div><img src="images/dashboard.png" alt=""></div><a href="index.html">dashboard</a></li>
+                        <li class="kompasMenu"><div><img src="images/kompas.png" alt=""></div><a href="kompas.html">kompas</a></li>
+                        <li class="informatorMenu"><div><img src="images/information.png" alt=""></div><a href="informator.html">informator</a></li>
+                        <li class="quizMenu"><div><img src="images/quiz.png" alt=""></div><a href="#">quiz</a></li>
+                    </ul>
+                </nav>
+                
+                
+            </section>
+            <section class="mainElements">
+                <h1>Wyniki</h1>
+                <div class="result">
+                </div>
+                <div id="chartArea" class="chartArea"></div>
+            </section>
+        </section>
+        <script src="src/wynik.js"></script>
+        
+    </body>
+</html>
