@@ -52,7 +52,7 @@ section.mainElements>div.projectDescription{
     left: 45px;
     background-color: white;
     width: 636px;
-    height: 255px;
+    height: 355px;
     border-radius: 20px;
 }
 section.mainElements>div.projectDescription>h1{
@@ -79,7 +79,7 @@ section.mainElements>div.Authors{
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    top:400px;
+    top:500px;
     left: 45px;
     background-color: white;
     width: 636px;
@@ -92,6 +92,12 @@ section.mainElements>div.Authors>h1{
     text-transform: uppercase;
     font-size: 2.1rem;
     margin-top: 50px;
+}
+
+.authorsList {
+    padding-top: 1rem;
+    list-style: none;
+    font-size: 1.6rem;
 }
 
 
