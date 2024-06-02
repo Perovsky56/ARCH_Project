@@ -258,12 +258,12 @@ document.addEventListener("DOMContentLoaded", function() {
             .text("liberalizm");
     
         // Rysowanie punktu na wykresie
-        const x = centerX + stats[0] * 30; // Skalowanie wartości stats[0] do zakresu wykresu
-        const y = centerY - stats[1] * 30; // Odwrócenie kierunku Y i skalowanie wartości stats[1] do zakresu wykresu
+        const x = centerX - stats[0] * 30;
+        const y = centerY + stats[1] * 30;
         // teoretycznie punkt
-        const referencePoint = { x: stats[0], y: stats[1] }; // Twój punkt referencyjny
+        const referencePoint = { x: -stats[0], y: -stats[1] }; // Twój punkt referencyjny
         const pointsArray = [{ x: -2.0, y: 3.0 }, { x: -1.0, y: -1.0 }, { x: 1.0, y: 0.0 }, { x: 3.0, y: 3.0 }, { x: -3.0, y: -3.0 }];
-//                                PIS                  KO                      TRZECIA           KONFA             LEWICA
+//                                  PIS                   KO                  TRZECIA              KONFA                LEWICA
         const closestIndex = findClosestPointIndex(referencePoint, pointsArray);
         const labels = ["Prawo i Sprawiedliwość", "Koalicja Obywatelska", "Trzecia Droga", "Konfederacja", "Lewica"];
         const chosenParagraph = document.querySelector('.chosen');
